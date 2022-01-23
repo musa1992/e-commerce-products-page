@@ -134,7 +134,7 @@ header > :last-child{
 .items-count{
     font-size: .75em;
 }
-nav {
+.navigation {
     position: absolute;
     top: 0;
     left: -80%;
@@ -142,10 +142,11 @@ nav {
     width: min(80%, 17.5rem);
     background-color: white;
     padding: 1em 2em;
+    transition: left 350ms ease-in;
     
 }
 
-nav > ul {
+.navigation > ul {
     margin-top: 2em;
 }
 .nav-links {
