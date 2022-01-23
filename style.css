@@ -36,6 +36,7 @@ img {
 }
 
 body {
+    position: relative;
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(220, 14%, 75%);
 }
@@ -47,10 +48,6 @@ button{
 .container {
     width: 90%;
     margin-inline: auto;
-}
-.flex-container {
-    display: flex;
-    flex-direction: column;
 }
 
 /** typography ***/
@@ -84,5 +81,31 @@ button{
 .add-to-cart {
     background-color: var(--orange-dark);
     color: white;
+    font-weight: 400;
+}
+
+/**header ***/
+header {
+    display: flex;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: -80%;
+    bottom: 0;
+    width: min(80%, 17.5rem);
+    background-color: white;
+    padding: 1em 2em;
+    
+}
+nav > ul {
+    margin-top: 2em;
+}
+.nav-links {
+    padding-bottom: 1em;
+}
+.nav-links  > a {
+    color: black;
     font-weight: 400;
 }
