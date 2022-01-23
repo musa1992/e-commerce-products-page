@@ -96,7 +96,8 @@ button{
     font-weight: 400;
 }
 
-/**header ***/
+/**header ***/ 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -171,4 +172,36 @@ header > :last-child{
    
     color: black;
     font-weight: 400;
+}
+
+/*** product image section ***/
+.product-image {
+    position: relative;
+    margin-bottom: 1em;
+}
+.scroll-img {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.scroll-img > img {
+    width: 40%;
+}
+.previous {
+    left: 4%;
+}
+.next{
+    right: 4%;
+}
+
+.thumbnail-container {
+    display: flex;
+    display: none;
 }
