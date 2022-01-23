@@ -87,8 +87,53 @@ button{
 /**header ***/
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1em;
+    padding-block: 1em;
+}
+header > :first-child{
+    display: flex;
+    align-items: center;
 }
 
+header > :last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-icon {
+    margin-right: 1em;
+    align-self: flex-end;
+}
+
+.avatar {
+    width: 20%;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+.items-count-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    padding: .5em;
+    border-radius: 50%;
+    top: -5px;
+    left: 10px;
+    background-color: var(--orange-dark);
+    color: white;
+    visibility: hidden;
+}
+.items-count{
+    font-size: .75em;
+}
 nav {
     position: absolute;
     top: 0;
@@ -99,13 +144,16 @@ nav {
     padding: 1em 2em;
     
 }
+
 nav > ul {
     margin-top: 2em;
 }
 .nav-links {
     padding-bottom: 1em;
+    cursor: pointer;
 }
 .nav-links  > a {
+   
     color: black;
     font-weight: 400;
 }
