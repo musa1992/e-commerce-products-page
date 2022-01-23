@@ -50,6 +50,17 @@ button{
     margin-inline: auto;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 0%);
+    opacity: 75%;
+    display: none;
+}
+
 /** typography ***/
 .brand-name {
     color: var(--orange-dark);
