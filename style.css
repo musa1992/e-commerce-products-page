@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root{
+    --orange-light:hsl(25, 100%, 94%);
+    --orange-dark: hsl(26, 100%, 55%);
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(220, 14%, 75%);
+}
+
+button{
+    border: none;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/** typography ***/
+.brand-name {
+    color: var(--orange-dark);
+    text-transform: uppercase;
+    font-size: .65em;
+    font-weight: 400;
+}
+.product-name {
+    color: black;
+    font-size: clamp(1.25rem, 2.5vw + 1em, 3rem);
+    font-weight: 700;
+}
+.price {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.discount-percent {
+    color: var(--orange-dark);
+    background-color: var(--orange-light);
+    font-size: .75em;
+    font-weight: 700;
+    padding: .25em;
+}
+.count {
+    color: black;
+}
+
+.add-to-cart {
+    background-color: var(--orange-dark);
+    color: white;
+    font-weight: 400;
+}
