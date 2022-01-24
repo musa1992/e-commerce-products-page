@@ -175,10 +175,15 @@ header > :last-child{
 }
 
 /*** product image section ***/
+.product-image-section{
+    width: 100%;
+    overflow: hidden;
+}
 .product-image {
     position: relative;
     margin-bottom: 1em;
 }
+
 .scroll-img {
     position: absolute;
     top: 50%;
@@ -195,11 +200,25 @@ header > :last-child{
     width: 40%;
 }
 .previous {
-    left: 4%;
+    left: 4%; 
+    z-index: 6;
+    
 }
 .next{
     right: 4%;
+    z-index: 6;
+    /* visibility: hidden; */
 }
+
+.product-image-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    transition: left 500ms ease-in;
+      
+}
+
+
 
 .thumbnail-container {
     display: flex;
