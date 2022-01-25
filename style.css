@@ -70,9 +70,9 @@ button{
     background-color: #FFF;
     z-index: 20;
     border-radius: 10px;
-    /* top: -300px; */
-    top: 65PX;
+    top: -300px;
     left: 5%;
+    transition: top 350ms ease-in-out;
 }
 
 .cart-basket > hr {
