@@ -56,7 +56,7 @@ button{
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 9;
     background-color: hsl(0, 0%, 0%);
     opacity: 75%;
     display: none;
@@ -73,11 +73,14 @@ button{
     color: black;
     font-size: clamp(1.25rem, 2.5vw + 1em, 3rem);
     font-weight: 700;
+    margin-top: .3em;
+
 }
 .price {
     color: black;
     font-size: 1.1em;
     font-weight: 700;
+    margin-right: 1em;
 }
 .discount-percent {
     color: var(--orange-dark);
@@ -94,6 +97,17 @@ button{
     background-color: var(--orange-dark);
     color: white;
     font-weight: 400;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: .75em;
+    border-radius: 5px;
+
+}
+.add-to-cart > img {
+    margin-right: .75em;
+    width: 1em;
 }
 
 /**header ***/ 
@@ -153,7 +167,7 @@ header > :last-child{
     top: 0;
     left: -80%;
     bottom: 0;
-    z-index: 2;
+    z-index: 10;
     width: min(80%, 17.5rem);
     background-color: white;
     padding: 1em 2em;
@@ -218,9 +232,37 @@ header > :last-child{
       
 }
 
-
-
 .thumbnail-container {
     display: flex;
     display: none;
 }
+
+/**product description **/
+.product-description-section{
+    padding-inline: 1em;
+}
+
+.product-description {
+    margin: .75em 0;
+}
+
+.product-price-discount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    border-radius: 5px;
+    background-color: hsl(223, 64%, 98%);
+    margin-bottom: .75em;
+}
+
