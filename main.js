@@ -4,6 +4,8 @@ let closeBtn = document.getElementById('close-btn');
 let overlay = document.querySelector('.overlay')
 let previousBtn = document.getElementById('icon-previous')
 let nextBtn = document.getElementById('icon-next')
+let cartIcon = document.getElementById('cart')
+let cartBasket = document.getElementById('cart-basket')
 let productCarousel = document.querySelector('.product-image-container')
 let productImages = Array.from(productCarousel.children)
 let width = productCarousel.clientWidth
@@ -18,6 +20,17 @@ menuIcon.addEventListener('click',()=>{
 closeBtn.addEventListener('click', ()=>{
     menu.style.left = "-80%"
     overlay.style.display = "none"
+})
+
+console.log(cartBasket.getClientRects())
+cart.addEventListener('click',()=>{
+    if(cartBasket.getClientRects()[0].top == -300){
+        cartBasket.style.top = "65px"
+    }else {
+        cartBasket.style.top = "-300px"
+    }
+    
+   
 })
 nextBtn.addEventListener('click',()=>{
     previousBtn.style.visibility ="visible"
