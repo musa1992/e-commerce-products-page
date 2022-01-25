@@ -48,6 +48,7 @@ button{
 .container {
     width: 90%;
     margin-inline: auto;
+    position: relative;
 }
 
 .overlay {
@@ -62,6 +63,32 @@ button{
     display: none;
 }
 
+.cart-basket {
+    position: absolute;
+    min-height: 300px;
+    width: 90%;
+    background-color: #FFF;
+    z-index: 20;
+    border-radius: 10px;
+    /* top: -300px; */
+    top: 65PX;
+    left: 5%;
+}
+
+.cart-basket > hr {
+    color: hsl(223, 64%, 98%);
+}
+
+.cart-upper-section {
+    padding: 1em;
+    color: #000;
+    font-weight: 700;
+}
+
+.cart-items-section {
+    padding-inline: 1em;
+    padding-block: .5em;
+}
 /** typography ***/
 .brand-name {
     color: var(--orange-dark);
