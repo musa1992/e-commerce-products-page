@@ -202,18 +202,18 @@ header > :last-child{
 .previous {
     left: 4%; 
     z-index: 6;
-    
+    visibility: hidden;
 }
 .next{
     right: 4%;
     z-index: 6;
-    /* visibility: hidden; */
 }
 
 .product-image-container{
     display: flex;
     width: 100%;
     position: relative;
+    left: 0;
     transition: left 500ms ease-in;
       
 }
