@@ -282,7 +282,7 @@ header > :last-child{
 }
 .prices {
     display: flex;
-    justify-content: space-between;
+   
 }
 
 .counter {
@@ -298,6 +298,10 @@ header > :last-child{
 
 @media (min-width: 760px){
     /**header section **/
+    header {
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 5rem;
+    }
 
     .menu-icon,.close-btn {
         display: none;
@@ -322,4 +326,44 @@ header > :last-child{
         width: 40%;
         margin-left: 3em;
     }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        padding-inline: 4em;
+        gap: 5em;
+    }
+
+    .product {
+        border-radius: 10px;
+    }
+
+    .thumbnail-container {
+        display: flex;
+        gap: 1em;
+    }
+
+    .thumbnail > img {
+        border-radius: 10px;
+    }
+
+    .product-price-discount {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .btn-container {
+        display: flex;
+        gap: .5em;
+    }
+
+    .counter {
+        flex-basis: 40%;
+        margin-bottom: 0;
+    }
+    .add-to-cart {
+        flex-basis: 60%;
+        cursor: pointer;
+    }
+
+
 }
