@@ -22,7 +22,7 @@ closeBtn.addEventListener('click', ()=>{
     overlay.style.display = "none"
 })
 
-console.log(cartBasket.getClientRects())
+
 cart.addEventListener('click',()=>{
     if(cartBasket.getClientRects()[0].top == -300){
         cartBasket.style.top = "65px"
@@ -37,7 +37,7 @@ nextBtn.addEventListener('click',()=>{
     let leftPos = productCarousel.getClientRects()[0].left
     productCarousel.style.left = ((-1 * width) + leftPos )-leftFactor  + "px"
     
-    let end = (((productCarousel.childElementCount - 2)* width)-leftFactor)*-1
+    let end = (((productCarousel.childElementCount - 3)* width)-leftFactor)*-1
     if (leftPos < end){
         nextBtn.style.visibility = "hidden"
     }

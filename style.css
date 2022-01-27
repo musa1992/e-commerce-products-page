@@ -63,6 +63,15 @@ button{
     display: none;
 }
 
+.btn {
+    background-color: var(--orange-dark);
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    padding-block: .75em;
+    border-radius: 5px;  
+}
+
 .cart-basket {
     position: absolute;
     min-height: 300px;
@@ -121,16 +130,9 @@ button{
 }
 
 .add-to-cart {
-    background-color: var(--orange-dark);
-    color: white;
-    font-weight: 400;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: .75em;
-    border-radius: 5px;
-
 }
 .add-to-cart > img {
     margin-right: .75em;
@@ -293,3 +295,31 @@ header > :last-child{
     margin-bottom: .75em;
 }
 
+
+@media (min-width: 760px){
+    /**header section **/
+
+    .menu-icon,.close-btn {
+        display: none;
+    }
+    .navigation {
+        position: initial;
+        padding: 1em 0;
+        width: 100%;
+        margin-left: 2em;
+    }    
+    .navigation > ul {
+        margin-top: 0;
+        display: flex;
+        gap: 2em
+        
+    }
+    .nav-links {
+        padding: 0;
+    }
+
+    .avatar{
+        width: 40%;
+        margin-left: 3em;
+    }
+}
