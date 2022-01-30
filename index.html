@@ -26,8 +26,22 @@
       </div>
       <hr>
       <div class="cart-items-section">
-        <p>Your cart is empty</p>
+        <template id="cart-template">
+          <div class="cart-items">
+            <div id="cart-product-img">
+              <img src="" alt="" class="img-thumbnail">
+            </div>
+            <div id="cart-product-description">
+              <p class="cart-product-name"></p>
+              <p class="qty-amnt"></p>
+            </div>
+            <div>
+              <img src="/images/icon-delete.svg" alt="">
+            </div>
+          </div>
+        </template>
       </div>
+      <button class="btn">Checkout</button>
     </div>
     <header class="header">
       <div>
@@ -49,7 +63,7 @@
       <div>
         <div class="cart" id="cart">
           <div class="items-count-wrapper">
-            <p class="items-count">30</p>
+            <p class="items-count">2</p>
           </div>
           <img src="/images/icon-cart.svg" alt="a shopping cart" class="cart-icon">
         </div>
@@ -78,7 +92,7 @@
         </div>
         <div class="thumbnail-container">
           <div class="thumbnail">
-            <img src="/images/image-product-1-thumbnail.jpg" alt="" srcset="">
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" srcset="" id="cart-product-thumbnail">
           </div>
           <div class="thumbnail">
             <img src="/images/image-product-2-thumbnail.jpg" alt="" srcset="">
@@ -93,14 +107,14 @@
       </section>
       <section class="product-description-section">
         <p class="brand-name">Sneaker Company</p>
-        <p class="product-name">Fall Limited Edition Sneakers</p>
+        <p class="product-name" id="product-name">Fall Limited Edition Sneakers</p>
         <p class="product-description">
           These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.
         </p>
         <div class="product-price-discount">
           <div class="prices">
-            <p class="price"> $125.00</p>
+            <p class="price" id="price"> $125.00</p>
             <p class="discount-percent">50%</p>
           </div>
           <p>$250.00</p>
