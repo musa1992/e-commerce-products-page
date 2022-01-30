@@ -63,6 +63,78 @@ button{
     display: none;
 }
 
+/***light box *************************/
+.light-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0,0.7);
+   
+}
+.lb-section {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    background-color: red;
+   
+}
+.lb-product-image-container {
+    position: relative;
+    top: 100px;
+    left: 143px;
+}
+
+.lb-product {
+    position: absolute;
+    min-height: 200px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.lb-thumbnail-container {
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+    position: relative;
+    top: 80%;
+    width: 45%;
+    margin: 0 auto;
+}
+.lb-thumbnail > img{
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.lb-arrows  > * {
+    position: absolute;
+    z-index: 50;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#lb-icon-previous {
+    left: 130px;
+}
+#lb-icon-next {
+    right:125px;
+}
+
+/********************* border for light box ********************/
+
+
+
 .btn {
     background-color: var(--orange-dark);
     color: white;
@@ -294,6 +366,7 @@ header > :last-child{
 /**product description **/
 .product-description-section{
     padding-inline: 1em;
+   
 }
 
 .product-description {

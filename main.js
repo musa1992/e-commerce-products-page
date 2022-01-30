@@ -2,11 +2,13 @@ let menuIcon = document.getElementById('menu-icon');
 let menu = document.getElementById('navigation');
 let closeBtn = document.getElementById('close-btn');
 let overlay = document.querySelector('.overlay')
+let lightBox = document.querySelector('.light-box')
 let previousBtn = document.getElementById('icon-previous')
 let nextBtn = document.getElementById('icon-next')
 let cartIcon = document.getElementById('cart')
 let cartBasket = document.getElementById('cart-basket')
 let productCarousel = document.querySelector('.product-image-container')
+let productSection = document.querySelector('.product-image-section')
 let productImages = Array.from(productCarousel.children)
 let counter = document.querySelector('.counter')
 let count = document.querySelector('.count')
@@ -131,6 +133,13 @@ addToCart.addEventListener('click',()=>{
     cartItemSection.append(item)
 
 
+})
+
+productCarousel.addEventListener('click',(e)=>{
+    
+    // let container = overlay.querySelector('.overlay-container')
+    // container.append(productSection)
+    lightBox.style.display = "block"
 })
 
 
