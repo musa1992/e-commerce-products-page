@@ -74,14 +74,17 @@ button{
 
 .cart-basket {
     position: absolute;
-    min-height: 300px;
+    max-height: 300px;
+    max-width: 300px;
     width: 90%;
     background-color: #FFF;
     z-index: 20;
     border-radius: 10px;
     top: -300px;
-    left: 5%;
+    right: 5%;
     transition: top 350ms ease-in-out;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0,0.3);
+    
 }
 
 .cart-basket > hr {
@@ -332,6 +335,7 @@ header > :last-child{
         align-items: center;
         padding-inline: 4em;
         gap: 5em;
+        cursor: pointer;
     }
 
     .product {

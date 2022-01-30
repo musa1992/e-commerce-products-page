@@ -8,8 +8,11 @@ let cartIcon = document.getElementById('cart')
 let cartBasket = document.getElementById('cart-basket')
 let productCarousel = document.querySelector('.product-image-container')
 let productImages = Array.from(productCarousel.children)
+let counter = document.querySelector('.counter')
+let count = document.querySelector('.count')
 let width = productCarousel.clientWidth
 let leftFactor = productCarousel.getClientRects()[0].left
+const header = document.querySelector('header')
 
 menuIcon.addEventListener('click',()=>{
     menu.style.left = "0"
@@ -24,8 +27,11 @@ closeBtn.addEventListener('click', ()=>{
 
 
 cart.addEventListener('click',()=>{
+
+    let top = header.getClientRects()[0].bottom
+    
     if(cartBasket.getClientRects()[0].top == -300){
-        cartBasket.style.top = "65px"
+        cartBasket.style.top = top +"px"
     }else {
         cartBasket.style.top = "-300px"
     }
@@ -54,4 +60,20 @@ previousBtn.addEventListener('click',()=>{
         previousBtn.style.visibility = "hidden"
     }
 
+})
+
+counter.addEventListener('click',(e)=>{
+    let items = parseInt(count.textContent)
+    if (e.target.classList.contains('plus')){
+        items += 1
+        count.textContent = items
+    }else if (e.target.classList.contains('minus')){
+        items -= 1
+        if (items == 0){
+            items = 1
+        }
+        count.textContent = items
+    }
+
+    
 })
